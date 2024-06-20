@@ -20,7 +20,6 @@ def start(message: Message) -> None:
         bot.send_message(user_id, function_list(user_id))
 
 
-
 if __name__ == '__main__':
     logger.add('debug_log.log', level='DEBUG', format='{time} | {level} | {message}', encoding='utf-8')
     bot.polling(none_stop=True, interval=0)
